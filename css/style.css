@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(to bottom right, white,red, black) no-repeat center center fixed;
+    color: white;
+    text-align: center;
+    background-size: cover;
+}
+
+.header {
+    width: 350px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 2px solid white;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2f2d2d;
+    border-radius: 3%;
+    text-shadow: 1px 1px white;
+    animation: fliph1 2s 1;
+}
+
+@keyframes fliph1 {
+    100% {transform: rotateY(360deg);}
+}
+
+.collected::first-letter {font-size: 30px;}
+
+.collected {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 3px solid rgba(0, 0, 0, 0.999);
+    width: 175px;
+    height: 25px;
+    padding: 20px;
+    margin: 15px auto;
+    padding-bottom: 30px;
+    font-size: 20px;
+    background-color: rgba(213, 243, 79, 0.899);
+    color: black;
+    border-radius: 0 35px 35px 0;
+    box-shadow: 3px 3px 3px 3px black;
+    text-shadow: 5px 5px 10px black;
+
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+
+table {
+    margin: 10px auto;
+    border-radius: 2%;
+    border: 5px solid black;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.cell img {
+    width: 25px;
+    height: auto;
+}
+
+.floor {
+    background-color: rgb(124, 124, 124);
+    outline: 2px solid black;
+
+}
+
+.wall {
+    background-color: rgba(255, 0, 0, 0.856);  
+    outline: 3px solid black;
+    animation:ease-in-out blinkWalls 10s infinite;
+}
+
+@keyframes blinkWalls {
+    0% {background-color: red;}
+    33% {background-color: rgb(163, 53, 53);}
+    67% {background-color: rgb(185, 153, 153);}
+    100% {background-color: red;}
+}
+
+
+.mode {
+    background-color: rgba(213, 243, 79, 0.999);
+    color: rgb(255, 0, 0);
+    width: 150px;
+    height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    opacity: 100%;
+}
+
+button {
+    outline: none;
+    border: 2px solid black;
+    background-color: #f1f1f1;
+    font-family: fantasy;
+    font-size: 15px;
+    width: 100px;
+    height: 50px;
+    margin: 3px 3px;
+    text-transform: uppercase;
+    transition:all .5s;
+    font-family: monospace;
+    animation: flipBtn 5s infinite;
+    animation-delay: 10s;
+    box-shadow: 4px 4px black, 4px 4px 8px rgb(255, 0, 0);
+    opacity: 60%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(213, 243, 79, 0.999);
+    color: rgb(255, 0, 0);
+    /* width: 150px;
+    height: 60px;
+    font-size: 25px; */
+}
+
+@keyframes flipBtn {
+    100% {transform: rotateY(360deg);}
+}

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Balls</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onkeyup="handleKey(event)" onload="initGame()">
+  <div class="header">
+    <h1>Collect Those Balls </h1>
+  </div>
+    
+  <div class="collected">
+    Balls Collected: <span>0</span>
+  </div>
+
+  <button onclick="setMode(this, 5, 3000)"  class="easy mode"`>easy</button>
+  <button onclick="setMode(this, 10, 1500)" class="medium">medium</button>
+  <button onclick="setMode(this, 15, 1000)" class="hard">hard</button>
+  <button onclick="setMode(this, 25, 500)" class="impossible">impossible</button>
+
+  <table>
+    <tbody class="board"></tbody>
+  </table>
+<br>
+
+  <script src="js/app.js"></script>
+  <script src="js/util.js"></script>
+</body>
+
+</html>
